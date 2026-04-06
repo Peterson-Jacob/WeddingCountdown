@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="index.js"></script>
+    <title>Teresa and Jacob Wedding Countdown</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+        body{
+            background: #000080;
+            background: linear-gradient(140deg, rgba(0, 0, 128, 1) 40%, rgba(6, 64, 43, 1) 60%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+            
+        }
+        
+        .heading{
+            font-family: "Great Vibes", cursive;
+            font-weight: 400;
+            font-style: normal;
+            line-height: 1.5;
+        }
+
+        .label{
+            font-family: "Playfair Display", serif; 
+        }
+
+        .imageDiv{
+            width: 80%;
+            max-width: 500px;
+            height: auto;
+            box-shadow: 5px 10px 10px #000000;
+            
+        }
+
+        .countdown{
+            width: 90%;
+            max-width: 500px;
+            height: auto; 
+        }
+    </style>
+</head>
+<body>
+   
+    <h1 class="text-center text-5xl md:text-7xl text-white my-12 heading">Teresa & Jacob's Wedding Countdown</h1>
+    <div class="imageDiv my-4 mx-auto" >
+        <img src="images/pic1.jpg" alt="JacobandTeresa">
+    </div>
+    <div>
+        <div class="text-xl md:text-2xl text-white flex my-12 mx-auto countdown" id="countdown">
+            <div class="time-box flex-1">
+                <div class="label">Days</div>
+                <div class="number" id="days">00</div>
+              
+            </div>
+            <div class="time-box flex-1">
+                <div class="label">Hours</div>
+                <div class="number" id="hours">00</div>
+              
+            </div>
+            <div class="time-box flex-1">
+                <div class="label">Minutes</div>
+                <div class="number" id="minutes">00</div>
+              
+            </div>
+            <div class="time-box flex-1">
+                <div class="label">Seconds</div>
+                <div class="number" id="seconds">00</div>
+              
+            </div>
+          </div>
+    </div>
+</body>
+</html>
