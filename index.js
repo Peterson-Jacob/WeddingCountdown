@@ -33,3 +33,20 @@ function updateCountdown() {
 
   // Initial call
   updateCountdown();
+
+  //Image Change
+  const img = document.getElementById("JacobandTeresa");
+  
+  setInterval(imgChange, 300);
+  let i = 1;
+  function imgChange(){
+      const images = ["pic1.jpg", "pic2.jpg", "pic3.jpg", "pic4.jpg", "pic5.jpg", "pic6.jpg", "pic7.jpg", "pic8.jpg", "pic9.jpg", "pic10.jpg", "pic11.jpg", "pic12.jpg" ];
+
+      if(i < 11){
+          img.src = "images/" + images[i];
+          i++;
+      }else{
+         i = 1;
+         img.src = "images/" + images[0];
+      };
+  };
