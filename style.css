@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 body{
     background: #000080;
-    background: linear-gradient(120deg, rgba(0, 0, 128, 1) 40%, rgba(6, 64, 43, 1) 60%);
+    background: linear-gradient(120deg, #000080 40%, #06402b 60%);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
@@ -55,3 +55,16 @@ body{
 #JacobandTeresa.fade-out {
     opacity: 0;
 }
+
+.registry{
+    background-color: #06402b;
+    width: 150px;
+   padding: 10px;
+    font-family: "Playfair Display", serif; 
+    box-shadow: 3px 3px 5px #000000;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+
+
